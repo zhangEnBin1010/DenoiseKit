@@ -1,0 +1,14 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'DenoiseKit_Example' do
+  pod 'DenoiseKit', :path => '../'
+
+  target 'DenoiseKit_Tests' do
+    inherit! :search_paths
+
+    pod 'Specta'
+    pod 'Expecta'
+  end
+end
