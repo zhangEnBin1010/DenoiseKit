@@ -36,6 +36,9 @@ Pod::Spec.new do |s|
   #   'DenoiseKit' => ['DenoiseKit/Assets/*.png']
   # }
 
+  s.static_framework = true #声明静态库
+  s.dependency 'libmp3lame'
+  
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
